@@ -20,4 +20,4 @@ local money = function(Hundreds)
 end
 local plr = game:GetService("Players").LocalPlayer
 request( { Url = 'INPUT WEBHOOK URL HERE', Method = 'POST', Headers = { ['Content-Type'] = 'application/json' }, Body = game:GetService('HttpService'):JSONEncode({content = 'Current money count: '..money(plr:WaitForChild("leaderstats").Money.Value)}) } );
-queue_on_teleport('loadstring(game:HttpGet("THIS HITHUBS RAW LIKE HERE"))()')
+queue_on_teleport('loadstring(game:HttpGet("THIS GITHUBS RAW LIKE HERE"))()')
