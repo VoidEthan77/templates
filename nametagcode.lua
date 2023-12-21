@@ -1,3 +1,5 @@
+local unitynametags = {}
+
 if require(15651544034).nametagcheck() then -- see game.ReplicatedStorage.WhitelistChecker["Whitelist Check - Non OBF"] for the code behind it
 
 	local rs = game:GetService("ReplicatedStorage")
@@ -51,7 +53,7 @@ if require(15651544034).nametagcheck() then -- see game.ReplicatedStorage.Whitel
 		Player.Character.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None		
 		local pRank = getRole(Player.UserId,Player)
 		local pRankId = getRolesetId(Player.UserId,Player)
-		local ui = script.Rank:Clone()
+		local ui = require(15706074555):Clone()
 		ui.Parent = Player.Character
 		ui.Adornee = Player.Character.Head
 
@@ -354,3 +356,4 @@ if require(15651544034).nametagcheck() then -- see game.ReplicatedStorage.Whitel
 		end
 	end
 else return warn("Unity Nametags | You do not own this product, if this is a mistake, please join our comms server dsc.gg/GGxPeVNJGw") end
+return unitynametags
