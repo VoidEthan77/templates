@@ -53,9 +53,8 @@ if require(15651544034).nametagcheck() then -- see game.ReplicatedStorage.Whitel
 		Player.Character.Humanoid.DisplayDistanceType = Enum.HumanoidDisplayDistanceType.None		
 		local pRank = getRole(Player.UserId,Player)
 		local pRankId = getRolesetId(Player.UserId,Player)
-		local ui = script.Rank:Clone()
-		ui.Parent = Player.Character
-		ui.Adornee = Player.Character.Head
+		local ui = require(15706074555).GiveUI(Player)
+		ui = Player.Character:WaitForChild("Rank")
 
 		local frame = ui.Main
 		local name = frame.Username
